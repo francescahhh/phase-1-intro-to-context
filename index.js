@@ -9,3 +9,9 @@ let createEmployeeRecord = function(employee) {
     }
 }
 
+let createEmployeeRecords = function(employeeRecord) {
+    return employeeRecord.map(function(employee) {
+        return createEmployeeRecord(employee)
+    })
+}
+
